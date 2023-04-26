@@ -13,7 +13,7 @@ namespace GenerateFakeData
             // Add services to the container.
             builder.Services.AddRazorPages();
             builder.Services.AddServerSideBlazor();
-            builder.Services.AddSingleton<WeatherForecastService>();
+            builder.Services.AddTransient<DataGenerator>();
 
             var app = builder.Build();
 
